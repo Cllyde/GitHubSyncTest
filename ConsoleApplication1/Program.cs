@@ -10,7 +10,8 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; i++)
+            IEnumerable<int> ints = Enumerable.Range(1, 10);
+            foreach (int i in ints)
             {
                 Console.WriteLine("Hello world!");
             }
